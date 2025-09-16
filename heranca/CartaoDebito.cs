@@ -17,6 +17,18 @@ public class CartaoDebito
 
     public string Cvv { get; set; }
 
+    public bool Debitar(decimal valor)
+    {
+        if (valor > Saldo)
+            return false;
+    }
+
+
+    public bool Debitar(decimal valor, bool usarLimite)
+ if(UsarLimite){
+    if (usarLimite)
+ }
+ 
 }
 
 public enum BandeiraCartao
